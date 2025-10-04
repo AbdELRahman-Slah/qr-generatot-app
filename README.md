@@ -1,4 +1,4 @@
-# OrderKing - QR Code Based Ordering System
+# OrderKing - QR Code Based
 
 OrderKing is a modern, full-stack application that enables businesses to manage orders through QR codes. The system consists of a React Native frontend and a Node.js/Express backend with MongoDB as the database.
 
