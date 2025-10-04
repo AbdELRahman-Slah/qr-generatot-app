@@ -4,13 +4,13 @@
     "slug": "frontend",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon.jpeg",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "scheme": "orderking",
     "backgroundColor": "#667eea",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.jpeg",
       "resizeMode": "contain",
       "backgroundColor": "#667eea"
     },
@@ -20,15 +20,20 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.jpeg",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.orderking.app"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon.jpeg"
     },
-    "plugins": ["expo-secure-store"]
+    "plugins": ["expo-secure-store"],
+    "extra": {
+      "eas": {
+        "projectId": "3c7af508-d536-46f1-80bf-8a41c84c2f37"
+      }
+    }
   }
 }

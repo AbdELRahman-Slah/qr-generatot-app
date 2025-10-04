@@ -82,18 +82,6 @@ function ResetPasswordScreen() {
             {/* Form */}
             <View style={styles.form}>
               <View style={styles.inputContainer}>
-                <Text style={styles.inputLabel}>Reset Token</Text>
-                <TextInput
-                  style={[styles.input, error && styles.inputError]}
-                  placeholder="Enter reset token"
-                  placeholderTextColor="#9CA3AF"
-                  autoCapitalize="none"
-                  value={resetToken}
-                  onChangeText={setResetToken}
-                />
-              </View>
-
-              <View style={styles.inputContainer}>
                 <Text style={styles.inputLabel}>New Password</Text>
                 <TextInput
                   style={[styles.input, error && styles.inputError]}
@@ -102,6 +90,7 @@ function ResetPasswordScreen() {
                   secureTextEntry
                   value={password}
                   onChangeText={setPassword}
+                  autoCapitalize="none"
                 />
               </View>
 
@@ -114,6 +103,7 @@ function ResetPasswordScreen() {
                   secureTextEntry
                   value={confirmPassword}
                   onChangeText={setConfirmPassword}
+                  autoCapitalize="none"
                 />
                 {error && <Text style={styles.errorText}>{error}</Text>}
               </View>
@@ -208,11 +198,12 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
     borderColor: "#D1D5DB",
-    borderRadius: 12,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
+    borderRadius: 8,
+    padding: 12,
     fontSize: 16,
+    color: "#1F2937",
     backgroundColor: "#F9FAFB",
+    flex: 1,
   },
   inputError: {
     borderColor: "#EF4444",

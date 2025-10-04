@@ -156,10 +156,16 @@ function SignUpScreen() {
                       />
                       <TouchableOpacity
                         style={styles.eyeIcon}
-                        onPress={() => setShowConfirmPassword(!showConfirmPassword)}
+                        onPress={() =>
+                          setShowConfirmPassword(!showConfirmPassword)
+                        }
                       >
                         <MaterialIcons
-                          name={showConfirmPassword ? "visibility-off" : "visibility"}
+                          name={
+                            showConfirmPassword
+                              ? "visibility-off"
+                              : "visibility"
+                          }
                           size={24}
                           color="#9CA3AF"
                         />
@@ -192,7 +198,7 @@ function SignUpScreen() {
             <View style={styles.footer}>
               <Text style={styles.footerText}>
                 Already have an account?{" "}
-                <TouchableOpacity onPress={() => navigation.navigate("SignIn")}>
+                <TouchableOpacity onPress={() => navigation.popTo("SignIn")}>
                   <Text style={styles.linkText}>Sign in</Text>
                 </TouchableOpacity>
               </Text>
