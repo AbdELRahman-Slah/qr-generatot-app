@@ -122,9 +122,9 @@ const forgotPassword = catchAsync(async (req, res, next) => {
       html: `
         <p>You requested a password reset.</p>
         <p>This link will expire in 10 minutes.</p>
-        <p>
+        <button style="background-color: #667eea; color: #ffffff; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
           <a href="${resetUrl}">Reset your password</a>
-        </p>
+        </button>
         <p>Or copy this link if the button doesn't work:</p>
         <p>${resetUrl}</p>
         <p>If you did not request this, you can safely ignore this email.</p>
